@@ -1,4 +1,7 @@
-local T, C, L = unpack(Tukui)
+-- Damn edits compatbility by Affli
+local UI
+if ElvUI then UI=ElvUI else UI=Tukui end
+local T, C, L = unpack(UI)
 
 -- Functions needed to make this work
 local function SetModifiedBackdrop(self)
