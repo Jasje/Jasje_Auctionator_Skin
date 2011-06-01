@@ -250,6 +250,8 @@ if not IsAddOnLoaded("Auctionator") then return end
 		SkinButton(Atr_Buy_Confirm_OKBut, true)
 		SkinButton(Atr_Buy_Confirm_CancelBut, true)
 		SkinButton(Atr_SaveThisList_Button, true)
+		SkinButton(Atr_RecommendItem_Tex, true)
+		SkinButton(Atr_SellControls_Tex, true)
 
         SkinEditBox(Atr_StackPriceGold)
         SkinEditBox(Atr_StackPriceSilver)
