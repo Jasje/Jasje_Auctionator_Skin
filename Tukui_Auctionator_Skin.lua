@@ -276,7 +276,7 @@ if not IsAddOnLoaded("Auctionator") then return end
 		Atr_FullScanFrame:SetTemplate("Transparent")
 		Atr_HeadingsBar:StripTextures()
         Atr_HeadingsBar:SetTemplate("Default")
-		Atr_HeadingsBar:Height(67)
+		Atr_HeadingsBar:Height(246)
 		Atr_Error_Frame:StripTextures()		
 		Atr_Error_Frame:SetTemplate("Transparent")
 		Atr_Hlist:StripTextures()
@@ -294,6 +294,27 @@ if not IsAddOnLoaded("Auctionator") then return end
 		Atr_MngSListsButton:Width(196)
 		Atr_NewSListButton:Width(196)
 		Atr_CheckActiveButton:Width(196)
+		
+		Atr_CreateAuctionButton:Width(165)
+		Atr_CreateAuctionButton:ClearAllPoints()
+		Atr_CreateAuctionButton:Point("CENTER", 14, -20)
+
+		Atr_DropDownSL:Width(224)
+		Atr_DropDownSL:ClearAllPoints()
+		Atr_DropDownSL:Point("TOP", Atr_Hlist, -6, 25)
+		
+		Atr_DropDown1:Width(224)
+		Atr_DropDown1:ClearAllPoints()
+		Atr_DropDown1:Point("TOP", Atr_Hlist, -6, 25)
+		
+		Atr_Col1_Heading:ClearAllPoints()
+		Atr_Col1_Heading:Point("TOPLEFT", Atr_HeadingsBar, 40, -32)
+		
+		Atr_Col3_Heading:ClearAllPoints()
+		Atr_Col3_Heading:Point("RIGHT", Atr_Col1_Heading, 105, 1)
+		
+		Atr_Col4_Heading:ClearAllPoints()
+		Atr_Col4_Heading:Point("RIGHT", Atr_Col3_Heading, 310, 0)		
 		
 		for i = 1, 6 do
 			SkinTab(_G["AuctionFrameTab"..i])
