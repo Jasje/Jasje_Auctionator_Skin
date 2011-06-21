@@ -322,12 +322,8 @@ if not IsAddOnLoaded("Auctionator") then return end
 		Atr_CancelSelectionButton:Point("RIGHT", Atr_Buy1_Button, "LEFT", -5, 0)
 	end
 	
-	if addon == "Blizzard_TradeSkillUI" then
-		SkinButton(Auctionator_Search, true)
-	end
-end)
-
-    Atr_BasicOptionsFrame:StripTextures()
+	-- option frames
+	Atr_BasicOptionsFrame:StripTextures()
     Atr_BasicOptionsFrame:SetTemplate("Default")
     SkinCheckBox(AuctionatorOption_Enable_Alt_CB)
     SkinCheckBox(AuctionatorOption_Open_All_Bags_CB)
@@ -426,3 +422,8 @@ end)
 	SkinButton( Atr_Mem_Cancel)
 	SkinDropDownBox(Atr_Mem_DD_numStacks)
 	SkinCheckBox(Atr_Mem_EB_stackSize)
+	
+	if addon == "Blizzard_TradeSkillUI" then
+		SkinButton(Auctionator_Search, true)
+	end
+end)
