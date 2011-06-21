@@ -218,7 +218,6 @@ if IsAddOnLoaded("Skinner") or IsAddOnLoaded("Aurora") then return end
 if not IsAddOnLoaded("Auctionator") then return end
 
 	if addon == "Blizzard_AuctionUI" then
-		SkinDropDownBox(Atr_DropDown1)
 		SkinDropDownBox(Atr_Duration)
 		SkinDropDownBox(Atr_DropDownSL)
 
@@ -302,11 +301,7 @@ if not IsAddOnLoaded("Auctionator") then return end
 		Atr_DropDownSL:Width(224)
 		Atr_DropDownSL:ClearAllPoints()
 		Atr_DropDownSL:Point("TOP", Atr_Hlist, -6, 25)
-		
-		Atr_DropDown1:Width(224)
-		Atr_DropDown1:ClearAllPoints()
-		Atr_DropDown1:Point("TOP", Atr_Hlist, -6, 25)
-		
+
 		Atr_Col1_Heading:ClearAllPoints()
 		Atr_Col1_Heading:Point("TOPLEFT", Atr_HeadingsBar, 40, -32)
 		
@@ -331,3 +326,103 @@ if not IsAddOnLoaded("Auctionator") then return end
 		SkinButton(Auctionator_Search, true)
 	end
 end)
+
+    Atr_BasicOptionsFrame:StripTextures()
+    Atr_BasicOptionsFrame:SetTemplate("Default")
+    SkinCheckBox(AuctionatorOption_Enable_Alt_CB)
+    SkinCheckBox(AuctionatorOption_Open_All_Bags_CB)
+    SkinCheckBox(AuctionatorOption_Show_StartingPrice_CB)
+    SkinCheckBox(Atr_RB_N)
+    SkinCheckBox(Atr_RB_M)
+    SkinCheckBox(Atr_RB_S)
+    SkinCheckBox(Atr_RB_L)
+
+    Atr_TooltipsOptionsFrame:StripTextures()
+    Atr_TooltipsOptionsFrame:SetTemplate("Default")
+    SkinCheckBox(ATR_tipsVendorOpt_CB)
+    SkinCheckBox(ATR_tipsAuctionOpt_CB)
+    SkinCheckBox(ATR_tipsDisenchantOpt_CB)
+
+    Atr_UCConfigFrame:StripTextures()
+    Atr_UCConfigFrame:SetTemplate("Default")
+	SkinButton(Atr_UCConfigFrame_Reset)
+	SkinEditBox(Atr_Starting_Discount)
+	
+	SkinEditBox(UC_5000000_MoneyInputGold)
+	SkinEditBox(UC_5000000_MoneyInputSilver)
+	SkinEditBox(UC_5000000_MoneyInputCopper)
+	SkinEditBox(UC_1000000_MoneyInputGold)
+	SkinEditBox(UC_1000000_MoneyInputSilver)
+	SkinEditBox(UC_1000000_MoneyInputCopper)
+	SkinEditBox(UC_200000_MoneyInputGold)
+	SkinEditBox(UC_200000_MoneyInputSilver)
+	SkinEditBox(UC_200000_MoneyInputCopper)
+	SkinEditBox(UC_50000_MoneyInputGold)
+	SkinEditBox(UC_50000_MoneyInputSilver)
+	SkinEditBox(UC_50000_MoneyInputCopper)
+	SkinEditBox(UC_10000_MoneyInputGold)
+	SkinEditBox(UC_10000_MoneyInputSilver)
+	SkinEditBox(UC_10000_MoneyInputCopper)
+	SkinEditBox(UC_2000_MoneyInputGold)
+	SkinEditBox(UC_2000_MoneyInputSilver)
+	SkinEditBox(UC_2000_MoneyInputCopper)
+	SkinEditBox(UC_500_MoneyInputGold)
+	SkinEditBox(UC_500_MoneyInputSilver)
+	SkinEditBox(UC_500_MoneyInputCopper)
+	
+    Atr_StackingOptionsFrame:StripTextures()
+    Atr_StackingOptionsFrame:SetTemplate("Default")  
+	Atr_Stacking_List:StripTextures()
+    Atr_Stacking_List:SetTemplate("Default")
+	
+	SkinButton(Atr_StackingOptionsFrame_Edit)
+	SkinButton(Atr_StackingOptionsFrame_New)
+	
+	Atr_ScanningOptionsFrame:StripTextures()
+	Atr_ScanningOptionsFrame:SetTemplate("Default")  
+	
+	SkinCheckBox(Atr_ScanOpts_MaxHistAge)
+	
+    AuctionatorResetsFrame:StripTextures()
+    AuctionatorResetsFrame:SetTemplate("Default") 
+
+	Atr_ShpList_Options_Frame:StripTextures()
+    Atr_ShpList_Options_Frame:SetTemplate("Default")	
+	Atr_ShpList_Frame:StripTextures()
+    Atr_ShpList_Frame:SetTemplate("Default")  
+	
+	SkinButton(Atr_ShpList_DeleteButton)
+	SkinButton(Atr_ShpList_EditButton)
+	SkinButton(Atr_ShpList_RenameButton)
+	SkinButton(Atr_ShpList_ExportButton)
+	SkinButton(Atr_ShpList_ImportButton) -- there are 2 buttons called like this, need to find a fix
+
+	AuctionatorDescriptionFrame:StripTextures()
+	AuctionatorDescriptionFrame:SetTemplate("Default")
+	
+	Atr_ShpList_Edit_Frame:StripTextures()
+	Atr_ShpList_Edit_Frame:SetTemplate("Default")
+	
+	SkinButton(Atr_ShpList_ImportSaveBut)
+	SkinButton(Atr_ShpList_SelectAllBut)
+	SkinButton(Atr_ShpList_SaveBut)
+	Atr_ShpList_Edit_FrameScrollFrameScrollBar:StripTextures()
+	SkinScrollBar(Atr_ShpList_Edit_FrameScrollFrameScrollBar)
+	
+	SkinDropDownBox(AuctionatorOption_Deftab)
+	SkinDropDownBox(Atr_tipsShiftDD)
+	SkinDropDownBox(Atr_deDetailsDD)
+	SkinDropDownBox(Atr_scanLevelDD)
+	
+	Atr_ConfirmClear_Frame:StripTextures()
+	Atr_ConfirmClear_Frame:SetTemplate("Default")
+	
+	SkinButton(Atr_ClearConfirm_Cancel)
+	
+	Atr_MemorizeFrame:StripTextures()
+	Atr_MemorizeFrame:SetTemplate("Default")
+	
+	SkinButton(Atr_Mem_Forget)
+	SkinButton( Atr_Mem_Cancel)
+	SkinDropDownBox(Atr_Mem_DD_numStacks)
+	SkinCheckBox(Atr_Mem_EB_stackSize)
