@@ -214,7 +214,7 @@ end
 local JasjeAuction = CreateFrame("Frame")
 JasjeAuction:RegisterEvent("ADDON_LOADED")
 JasjeAuction:SetScript("OnEvent", function(self, event, addon)
-if IsAddOnLoaded("Skinner") or IsAddOnLoaded("Aurora") then return end
+if IsAddOnLoaded("Skinner") or IsAddOnLoaded("Aurora") or not C.general.blizzardreskin then return end
 if not IsAddOnLoaded("Auctionator") then return end
 
 	if addon == "Blizzard_AuctionUI" then
