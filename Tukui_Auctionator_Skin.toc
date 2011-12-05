@@ -1,5 +1,5 @@
 ## Interface: 40300
-## Title: |cffC495DDTukui_Auctionator_Skin|r
+## Title: |cffD38D01Tukui_Auctionator_Skin|r
 ## Notes: Editless Auctionator Skin
 ## Author: Jasje
 ## Version: 1.03
