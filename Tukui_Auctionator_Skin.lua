@@ -252,6 +252,10 @@ if not IsAddOnLoaded("Auctionator") then return end
 		SkinButton(Atr_RecommendItem_Tex, true)
 		SkinButton(Atr_SellControls_Tex, true)
 
+		SkinEditBox(Atr_StartingPriceGold)
+        SkinEditBox(Atr_StartingPriceSilver)
+        SkinEditBox(Atr_StartingPriceCopper)
+		
         SkinEditBox(Atr_StackPriceGold)
         SkinEditBox(Atr_StackPriceSilver)
         SkinEditBox(Atr_StackPriceCopper)
