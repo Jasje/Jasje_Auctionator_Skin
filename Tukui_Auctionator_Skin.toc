@@ -3,8 +3,8 @@
 ## Notes: Editless Auctionator Skin
 ## Author: Jasje
 ## Version: 1.03
-## RequiredDeps: Tukui, Auctionator
-## OptionalDeps: ElvUI
+## RequiredDeps: Auctionator
+## OptionalDeps: ElvUI,Tukui
 
 Tukui_Auctionator_Skin.lua
 
