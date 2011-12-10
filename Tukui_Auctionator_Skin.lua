@@ -270,6 +270,9 @@ if not IsAddOnLoaded("Auctionator") then return end
 		SkinEditBox(Atr_AS_Maxlevel)
 		SkinEditBox(Atr_AS_MinItemlevel)
         SkinEditBox(Atr_AS_MaxItemlevel)		
+		
+		T.SkinScrollBar(AuctionatorScrollFrameScrollBar)
+		T.SkinScrollBar(Atr_Hlist_ScrollFrameScrollBar)
 
 		Atr_FullScanResults:StripTextures()
 		Atr_FullScanResults:SetTemplate("Transparent")
