@@ -218,6 +218,7 @@ if IsAddOnLoaded("Skinner") or IsAddOnLoaded("Aurora") or not C.general.blizzard
 if not IsAddOnLoaded("Auctionator") then return end
 
 	if addon == "Blizzard_AuctionUI" then
+	    print("|cffD38D01Jasje Auctionator Skin Loaded") 
 		SkinDropDownBox(Atr_Duration)
 		SkinDropDownBox(Atr_DropDownSL)
 
